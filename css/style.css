@@ -1,0 +1,140 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/* Estilos del header */
+header {
+    background-color: #87CEEB; /* Azul cielo */
+    width: 100%; /* Ancho del header horizontal al 100% */
+    height: 60px; /* Altura del header */
+    position:relative;
+    top: 0;
+    transition: background-color 0.3s; /* Transición de color al pasar el ratón */
+}
+
+nav ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    display: flex; /* Cambia el menú a un diseño flexible */
+    justify-content: space-around; /* Distribuye los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+    height: 100%; /* Ajusta la altura de los elementos */
+}
+
+nav li {
+    text-align: center;
+}
+
+/* Estilos de los enlaces en el menú */
+.menu-item {
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, background-color 0.3s; /* Transición de color al pasar el ratón */
+    padding: 10px 20px; /* Espaciado entre elementos del menú */
+}
+
+.menu-item:hover {
+    color: #ffffff; /* Cambia a blanco al pasar el ratón */
+    background-color: #333; /* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Cambiar el color del fondo del header al pasar el ratón */
+header:hover {
+    background-color: #ff5a5a; /* Cambia a blanco al pasar el ratón */
+    transition: background-color 0.3s;
+}
+
+.logo{
+    width: 100%;
+    background-color:antiquewhite;
+    padding: 0px;
+    height: auto;
+    border-radius: 100px;
+   }
+   
+
+
+.article1 {
+    border: 2px solid #000; /* Borde negro de 2 píxeles */
+    padding: 20px; /* Espaciado interno para separar el contenido del borde */
+    width: 500px; /* Ancho del artículo, puedes ajustarlo según tus necesidades */
+    margin: 0 auto; /* Centra el artículo horizontalmente en la página */
+    text-align: center;
+    border-radius: 100px;
+}
+
+.portfolio-headings {
+    width: 100px;
+    padding: 5em;
+}
+
+.portfolio-headings h2 {
+    font-size: 2.5em;
+}
+
+.main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    
+}
+
+.slides {
+    width: 100%;
+}
+
+.slides img {
+    width: 100%;
+}
+
+/* Estilos para el slider */
+.main {
+    text-align: center;
+}
+
+.slider {
+    /*overflow: hidden; */
+    align-items: center; /* Centra verticalmente las imágenes */
+    position: relative;
+    display: block;
+    height: fit-content;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease;
+    position: absolute;
+    opacity: 0;
+    left: 0%;
+}
+
+/* Estilos para los botones de navegación */
+.slider-controls {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+img:first-of-type {
+    opacity: 1;
+
+}
