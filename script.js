@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const slider = document.querySelector(".slider");
-    const slides = document.querySelectorAll(".slide");
+    const slides = document.querySelectorAll(".slide"); //todas las imagenes
     const prevBtn = document.getElementById("prevBtn");
     const nextBtn = document.getElementById("nextBtn");
     let currentSlide = 0;
@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
     function showSlide(index) {
         slides.forEach((slide, i) => {
             if (i === index) {
-            /*    slide.style.transform = "translateX(0%)";
+               slide.style.opacity = "1"; //Cambiar la opacidad del elemento
             } else {
-                slide.style.transform = "translateX(100%)";*/
+                slide.style.opacity = "0"; // cambiar imagen que esta detrás
             }
         });
     }
