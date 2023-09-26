@@ -11,7 +11,7 @@ body {
 header {
     background-color: #87CEEB;
     width: 100%; 
-    height: 60px; 
+    height: 100%; 
     position:relative;
     top: 0;
     transition: background-color 0.3s; /* Transición de color al pasar el ratón */
@@ -21,7 +21,7 @@ nav ul {
     list-style: none;
     padding: 20px;
     margin: 0;
-    display: flex; /* Cambia el menú a un diseño flexible */
+    display: flex; 
     justify-content: space-around; /* Distribuye los elementos horizontalmente */
     align-items: center; /* Centra verticalmente los elementos */
     height: 100%; /* Ajusta la altura de los elementos */
@@ -29,14 +29,19 @@ nav ul {
 
 nav li {
     text-align: center;
+    
 }
+
 
 /* Estilos de los enlaces en el menú */
 .menu-item {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     transition: color 0.3s, background-color 0.3s; /* Transición de color al pasar el ratón */
     padding: 10px 20px; 
+    @media only screen and (max-width: 600px) {
+        font-size: 15px;
+      }
 }
 
 .menu-item:hover {
@@ -60,7 +65,11 @@ header:hover {
    }
    
 
-
+.bio {
+    background-color: pink;
+    width: auto;
+    height: auto;
+}
 .article1 {
     border: 2px solid #000; /* Borde negro de 2 píxeles */
     padding: 20px; /* Espaciado interno para separar el contenido del borde */
@@ -68,8 +77,21 @@ header:hover {
     margin: 0 auto; /* Centra el artículo horizontalmente en la página */
     text-align: center;
     border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+    @media only screen and (max-width: 600px) {
+     width: 70%
+      }
 }
 
+.titulo-1 {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 250%;
+    
+}
+
+.buty {
+    background-color: pink;
+}
 .portfolio-headings {
     width: 100px;
     padding: 5em;
@@ -129,12 +151,198 @@ button {
     color: #fff;
     border: none;
     padding: 10px 20px;
-    margin: 0 5px;
+    margin: 0 10px;
     cursor: pointer;
+    border-radius: 180%;
+
     
 }
 
 button:hover {
     background-color: #0056b3;
+    transition: background-color 0.3s;
+    color: #ffffff; 
+    background-color: #ff5a5a;
 }
 
+/* Estilo home */
+
+.homex {
+    background-color: pink;
+}
+
+/* boton*/
+.btn {
+    border-radius: 60%;
+    border: none;
+    background-color: #87CEEB;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    transition: color 0.3s, background-color 0.3s
+    
+    
+    
+}
+.btn:hover {
+   
+    transition: background-color 0.3s;
+    color: #ffffff; 
+    background-color: #ff5a5a;
+}
+
+.btn1 {
+    color: #042eff;
+}
+
+.btn1:hover {
+   
+    transition: background-color 0.3s;
+    color: #ffffff; 
+    background-color: #333;
+}
+
+/* contenido index*/
+.main1 {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.info-content > h1 {
+    font-size: 3em;
+    font-family: 'MedievalSharp', cursive;
+    margin-top: 20px;
+    height: 40px;
+    @media only screen and (height) {
+        height: 10%;
+         }
+   
+}
+
+.info-content > p {
+    font-size: 1em;
+    line-height: 1.7;
+}
+
+/* imagen index*/
+.info-content > img {
+    display: block;
+    width: 30%;
+    height: 100%;
+    border-radius: 25%;
+    margin: auto;
+    @media only screen and (max-width: 700px) {
+        width: 90%;
+
+         }
+
+}
+
+.botonind {
+    
+    display: flexbox;   
+    width: 20%;
+    height: 100%;
+    border-radius: 25%;
+    margin: auto;
+    @media only screen and (width) {
+        width: 50%;
+         }
+}
+
+
+/*video*/
+
+.video {
+    margin: 5%;
+    display: flex;
+    width: 80%;
+    height: 100%;
+    @media only screen and (max-width: 700px) {
+        width: 90%;
+
+         }
+    
+}
+
+/*formulario*/
+
+.contactb {
+    background-color: pink; 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.formulario {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    @media only screen and (max-width: 700px) {
+        width: 80%;
+
+         }
+
+}
+
+
+.formulario p:hover {
+    background-color: #f0f0f0; 
+    transition: background-color 0.3s ease;
+}
+
+
+#enviar {
+    border-radius: 60%;
+    border: none;
+    background-color: #87CEEB;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    transition: color 0.3s, background-color 0.3s
+}
+
+#enviar:hover {
+   
+    transition: background-color 0.3s;
+    color: #000000; 
+    background-color: #ff5a5a;
+}
+
+.obligatorio {
+    color: red;
+}
+
+img:first-of-type {
+    opacity: 1;
+}
+
+.caja {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.texto_mensaje {
+    width: 200px;
+    height: 200px;
+}
